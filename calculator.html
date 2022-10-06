@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>How many hits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0'>
+    
+    <!-- that will display this site correctly on smartphones -->
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- that will be a font -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="bgc"> How many hits </h1>
+
+        </header>
+
+        <!-- Menu strony -->
+
+        <nav>
+            <a class="menu" href="index.html">Start</a>
+            <a class="menu" href="bosses.html">Bosses</a>
+            <a class="menu" href="weapons.html">Weapons</a>
+            <a class="menu" href="calculator.html">Calculator</a>
+        </nav>
+
+        <article class="forms">
+
+            <form>
+
+                <!-- below are all the straight swords to choose from -->
+
+                <label for="weapon"> Weapon: </label>
+                <select id="weapon">
+                    <option value="Short Sword">Short Sword</option>
+                    <option value="Longsword">Longsword</option>
+                    <option value="Broadsword">Broadsword</option>
+                    <option value="Weathered Straight Sword">Weathered Straight Sword</option>
+                    <option value="Lordsworn's Straight Sword">Lordsworn's Straight Sword</option>
+                    <option value="Noble's Slender Sword">Noble's Slender Sword</option>
+                    <option value="Cane Sword">Cane Sword</option>
+                    <option value="Warhawk's Talon">Warhawk's Talon</option>
+                    <option value="Lazuli Glintstone Sword">Lazuli Glintstone Sword</option>
+                    <option value="Carian Knight's Sword">Carian Knight's Sword</option>
+                    <option value="Crystal Sword">Crystal Sword</option>
+                    <option value="Rotten Crystal Sword">Rotten Crystal Sword</option>
+                    <option value="Miquellan Knight's Sword">Miquellan Knight's Sword</option>
+                    <option value="Ornamental Straight Sword">Ornamental Straight Sword</option>
+                    <option value="Golden Epitaph">Golden Epitaph</option>
+                    <option value="Sword of St Trina">Sword of St Trina</option>
+                    <option value="Regalia of Eochaid">Regalia of Eochaid</option>
+                    <option value="Sword of Night and Flame">Sword of Night and Flame</option>
+                </select>
+
+
+            </form>
+
+            <form>
+
+                <!-- below are all the upgrades to choose from -->
+
+                <label for="upgrade"> Upgrade: </label>
+                <input id="upgrade" type="number" step="1" min="0" max="25">
+
+
+            </form>
+
+            <form>
+
+                <!-- below are all the STR stats to choose from -->
+
+                <label for="str"> STR: </label>
+                <input id="str" type="number">
+
+            </form>
+
+            <form>
+
+                <!-- below are all the DEX stats to choose from -->
+
+                <label for="dex"> DEX: </label>
+                <input id="dex" type="number">
+
+            </form>
+
+            <form>
+
+                <!-- below are all the bosses to choose from -->
+
+                <label for="boss"> Boss: </label>
+                <select id="boss">
+                    <option value="Godrick the Grafted">Godrick the Grafted</option>
+                    <option value="Rennala, Queen of the Full Moon">Rennala, Queen of the Full Moon</option>
+                    <option value="Starscourge Radahn">Starscourge Radahn</option>
+                    <option value="Morgott, The Omen King">Morgott, The Omen King</option>
+                    <option value="Rykard, Lord of Blasphemy">Rykard, Lord of Blasphemy</option>
+                    <option value="Mohg, Lord of Blood">Mohg, Lord of Blood</option>
+                    <option value="Malenia, Blade of Miquella">Malenia, Blade of Miquella</option>
+                    <option value="Lichdragon Fortissax">Lichdragon Fortissax</option>
+                    <option value="Beast Clergyman">Beast Clergyman</option>
+                    <option value="Maliketh, The Black Blade">Maliketh, The Black Blade</option>
+                    <option value="Astel, Naturalborn of the Void">Astel, Naturalborn of the Void</option>
+                    <option value="Regal Ancestor Spirit">Regal Ancestor Spirit</option>
+                    <option value="Radagon of the Golden Order">Radagon of the Golden Order</option>
+                    <option value="Elden Beast">Elden Beast</option>
+                    <option value="Godfrey, First Elden Lord">Godfrey, First Elden Lord</option>
+                    <option value="Fire Giant">Fire Giant</option>
+                    <option value="Dragonlord Placidusax">Dragonlord Placidusax</option>
+                </select>
+
+            </form>
+
+            <!-- below is submit button -->
+
+            <button class="calculate">Calculate</button>
+
+
+        </article>
+
+        <div class="result">
+
+        </div>
+        <script src="javascript.js">
+
+        </script>
+
+</body>
+
+</html>
