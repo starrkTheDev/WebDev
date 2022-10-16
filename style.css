@@ -22,8 +22,8 @@ body {
     max-width: 1440px;
     width: 100vw;
     margin: 0 auto;
-    border-left: solid 1px white;
-    border-right: solid 1px white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     min-height: 100vh;
 }
 
@@ -58,10 +58,8 @@ a.menu {
     overflow: hidden;
     position: relative;
     transition: .3s;
-    border-bottom: solid 2px white;
-    border-top: solid 2px white;
     margin-bottom: 10px;
-    border-right: solid 2px white;
+    border: 2px solid white;
 }
 
 a.menu:hover {
@@ -84,11 +82,6 @@ p.description {
     line-height: 150%;
     max-width: 800px;
     padding: 0 50px;
-}
-
-article {
-    max-width: 1080px;
-    margin: 0 auto;
 }
 
 section {
@@ -147,7 +140,7 @@ label {
 .result {
     color: white;
     position: relative;
-    top: 300px;
+    bottom: 0;
     font-size: 50px;
 }
 
@@ -203,6 +196,12 @@ img.weapon {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1440px) {
+    .wrap {
+        border: none;
+    }
+
+}
 
 @media (max-width: 1024px) {
     a.menu {
@@ -226,7 +225,6 @@ img.weapon {
         background-color: black;
         color: white;
     }
-
 }
 
 @media (max-width: 768px) {
